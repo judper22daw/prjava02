@@ -1,0 +1,20 @@
+INSTRUCCIONS
+
+1) git checkout -b branca00 --> crear nova branca i accedir a ella
+   git status --> per saber l'estat del projecte i saber a quina branca ens trobem
+5) git checkout main --> canviem a la branca main
+   git status --> comprovar l'estat del projecte
+   git log --> mostrar l'historial de la branca
+   Trobem la diferència que la branca main només tenim 2 commits i a la branca00 3 commits.
+7) git checkout branca00 --> canviar a la branca00
+   geany Prjava02.java --> veure el contingut del fitxer
+10b) git merge branca00 --no-ff --> molt important executar-ho des de la branca main. --no-ff és per no perdre l'historial de commits
+12) git push --set-upstream origin branca00
+14a) git push --set-upstream origin branca01
+
+RESPOSTES
+
+6) No podem veure l'ultima linia afegida del fitxer Prjava02.java perquè els canvis s'han fet des de la branca00 i només estan en local de moment.
+7) Sí que podem veure els canvis que haviem realitzat al fitxer Prjava02.java perque els haviem fet des d'aqui.
+12c) S’ha actualitzat la branca main i estan totes les modificacions. Només s’ha actualitzat aquesta branca perquè no hem modificat la branca00, unicament hem traspassat el seu contingut a main fent un merge.
+14c) Está a 1 commit de distància de la branca main.
